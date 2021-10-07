@@ -1,0 +1,22 @@
+host: dog
+datacenter:
+  location: Fazendarouter"42\n"
+  switch: '34'
+roles:
+  - webserver
+  - databases
+funcionamento: |
+  segunda - das 08:00 às 17:00
+  terça   - das 09:00 às 18:00
+  quarta  - das 08:00 às 18:00
+  quinta  - das 08:00 às 17:00
+  sexta   - das 09:00 às 18:00
+  sábado  - das 09:00 às 18:00
+  domingo - das 09:00 às 18:00
+comentários: >
+  Temos alto uso de CPU
+  desde 04/10/2021.
+  Estamos investigando.
+
+    Junior-Unix
+    junior-unix@live.com

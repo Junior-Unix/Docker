@@ -6,8 +6,6 @@ roules1:
   - web
   - dns
 
-
-
-  host2: "dog"
-  datacenter2: { location: Fazenda, router: 42 }
-  roles2: [web, dns ]
+host2: "dog"
+datacenter2: { location: Fazenda, router: 42 }
+roles2: [web, dns ]

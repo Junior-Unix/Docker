@@ -1,0 +1,13 @@
+host: dog
+datacenter:
+ location: Fazenda
+ router: 42
+ switch: 34
+---
+host: unix
+datacenter:
+  location: US
+  router: lock
+  switch: 4
+
+  
