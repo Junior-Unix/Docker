@@ -1,0 +1,15 @@
+---
+host: dog
+datacenter:
+  location: &PR Paraná
+---
+host: microsoft
+datacenter:
+  location: *PR
+---
+roles: &ghost
+  - webserver
+  - databases
+...
+---
+roles: *ghost  #Essa âncora irá pegar a array &ghost.
