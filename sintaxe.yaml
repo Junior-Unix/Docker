@@ -1,0 +1,7 @@
+host: dog
+datacenter:
+  location: Fazenda
+  router: 42
+roles:
+  - web
+  - dns
