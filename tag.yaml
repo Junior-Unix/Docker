@@ -1,0 +1,13 @@
+%TAG ! tag:host:dog:
+---
+host: dog
+datacenter:
+  location: !DOG Paraná
+  router: "42"
+  switch: '34'
+---
+host: microsoft
+datacenter:
+  location: ElDorado
+  router: !!str 45  #o mesmo que o router em cima "45", tem float também.
+  switch: !!str 23  #o mesmo que o router em cima "23".

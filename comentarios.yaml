@@ -1,0 +1,7 @@
+#Configurações de host DOG
+---
+host: dog
+datacenter:
+  location: SP  #Capital
+  router: 42
+  switch: 34
