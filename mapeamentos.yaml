@@ -1,0 +1,6 @@
+host: dog
+datacenter1:
+  location: Fazenda
+  router: 42
+
+  datacenter2: { location: Fazenda, router: 42 }
