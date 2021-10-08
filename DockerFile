@@ -2,3 +2,5 @@ FROM nginx:1.21.3-alpine
 LABEL maintainer="juniorunix <sonjunior@live.com>"
 COPY . /usr/share/nginx/html
 EXPOSE 80 
+#docker build -f .\DockerFile -t juniorunix/servidor_web:v1 .
+#docker run --name "servidor_web" -d -p 8080:80 juniorunix/servidor_web:v
