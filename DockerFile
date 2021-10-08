@@ -1,6 +1,7 @@
-FROM nginx:1.21.3-alpine
-LABEL maintainer="juniorunix <sonjunior@live.com>"
-COPY . /usr/share/nginx/html
-EXPOSE 80 
-#docker build -f .\DockerFile -t juniorunix/servidor_web:v1 .
-#docker run --name "servidor_web" -d -p 8080:80 juniorunix/servidor_web:v
+FROM python:3.9.0-alpine
+LABEL maintainer "Junior-Unix <sonjunior@live.com>"
+COPY . /var/www
+WORKDIR /var/www
+RUN apk update && apk add zlib-dev jpeg-dev gcc musl-dev && pip install -r requirements.txt && python manage.py migrate
+ENTRYPOINT python manage.py runserver 0.0.0.0:8000
+EXPOSE 8000
