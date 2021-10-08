@@ -1,0 +1,4 @@
+FROM nginx:1.21.3-alpine
+LABEL maintainer="juniorunix <sonjunior@live.com>"
+COPY . /usr/share/nginx/html
+EXPOSE 80 
