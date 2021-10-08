@@ -5,3 +5,5 @@ WORKDIR /var/www
 RUN apk update && apk add zlib-dev jpeg-dev gcc musl-dev && pip install -r requirements.txt && python manage.py migrate
 ENTRYPOINT python manage.py runserver 0.0.0.0:8000
 EXPOSE 8000
+# docker build -f .\Dockerfile -t juniorunix/fusion:v1 .
+# docker run --name "fusion" -d -p 8080:8000 juniorunix/fusion:v1
