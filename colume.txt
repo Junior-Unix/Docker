@@ -1,0 +1,3 @@
+docker run --name "nome_da_imagem" -d -p 8080:80 -e
+NGINX_EXTRYPOINT_QUIET_LOGS=1 -v "/pasta/do/host:/pasta/da/imagem"
+nginx:1.21.3-alpine
